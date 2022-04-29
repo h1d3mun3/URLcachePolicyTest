@@ -1,24 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="URLcachePolicyTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MrQ-Hf-YIL">
+                                <rect key="frame" x="8" y="52" width="398" height="176.5"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6uo-Jx-ss1">
+                                        <rect key="frame" x="0.0" y="0.0" width="199" height="176.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zj9-6n-9hP">
+                                        <rect key="frame" x="199" y="0.0" width="199" height="176.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zj9-6n-9hP" secondAttribute="trailing" id="4DZ-JA-pxT"/>
+                                    <constraint firstAttribute="bottom" secondItem="6uo-Jx-ss1" secondAttribute="bottom" id="8ZZ-T0-8Ir"/>
+                                    <constraint firstItem="6uo-Jx-ss1" firstAttribute="top" secondItem="MrQ-Hf-YIL" secondAttribute="top" id="ByS-tm-pp5"/>
+                                    <constraint firstItem="6uo-Jx-ss1" firstAttribute="width" secondItem="MrQ-Hf-YIL" secondAttribute="width" multiplier="0.5" id="G4f-OV-GxI"/>
+                                    <constraint firstItem="6uo-Jx-ss1" firstAttribute="leading" secondItem="MrQ-Hf-YIL" secondAttribute="leading" id="NB3-Tq-WRL"/>
+                                    <constraint firstAttribute="bottom" secondItem="zj9-6n-9hP" secondAttribute="bottom" id="RfS-FK-GFX"/>
+                                    <constraint firstItem="zj9-6n-9hP" firstAttribute="width" secondItem="MrQ-Hf-YIL" secondAttribute="width" multiplier="0.5" id="cI6-If-MiL"/>
+                                    <constraint firstItem="zj9-6n-9hP" firstAttribute="top" secondItem="MrQ-Hf-YIL" secondAttribute="top" id="mkq-Qt-Dta"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nq7-c8-NvJ">
+                                <rect key="frame" x="8" y="236.5" width="398" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="url"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ym-fl-97P">
+                                <rect key="frame" x="8" y="278.5" width="398" height="339"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RequestOptions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3Z-kM-9jo">
+                                        <rect key="frame" x="8" y="8" width="382" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff3-w7-njU">
+                                        <rect key="frame" x="87.5" y="76" width="223" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="reloadIgnoringLocalCacheData"/>
+                                        <connections>
+                                            <action selector="reloadIgnoringLocalCacheDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUb-ox-vYl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0z-67-CKd">
+                                        <rect key="frame" x="100.5" y="154" width="197" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="returnCacheDataDontLoad"/>
+                                        <connections>
+                                            <action selector="returnCacheDataElseLoadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ner-ns-Yeg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiX-vf-n9u">
+                                        <rect key="frame" x="50" y="193" width="298" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="reloadIgnoringLocalAndRemoteCacheData"/>
+                                        <connections>
+                                            <action selector="returnCacheDataDontLoadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgs-ht-vOe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9t-HG-Ea6">
+                                        <rect key="frame" x="102.5" y="115" width="193" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="returnCacheDataElseLoad"/>
+                                        <connections>
+                                            <action selector="reloadIgnoringLocalAndRemoteCacheDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0lx-cb-zKk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ER2-z2-vlN">
+                                        <rect key="frame" x="91.5" y="232" width="215" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="reloadRevalidatingCacheData"/>
+                                        <connections>
+                                            <action selector="reloadRevalidatingCacheDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRf-eE-ReC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flD-A0-UPz">
+                                        <rect key="frame" x="108.5" y="37" width="181" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="useProtocolCachePolicy"/>
+                                        <connections>
+                                            <action selector="useProtocolCachePolicyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tvh-gG-9hk"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cookie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoo-n9-jgj">
+                                        <rect key="frame" x="8" y="271" width="382" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlo-mg-MQS">
+                                        <rect key="frame" x="131.5" y="300" width="135" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Clear local cache"/>
+                                        <connections>
+                                            <action selector="clearLocalCookies:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MlN-Gr-nlc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="YiX-vf-n9u" firstAttribute="top" secondItem="g0z-67-CKd" secondAttribute="bottom" constant="8" id="3sm-QG-Wwj"/>
+                                    <constraint firstItem="ff3-w7-njU" firstAttribute="top" secondItem="flD-A0-UPz" secondAttribute="bottom" constant="8" id="6qe-8E-uvh"/>
+                                    <constraint firstItem="vlo-mg-MQS" firstAttribute="top" secondItem="Zoo-n9-jgj" secondAttribute="bottom" constant="8" id="88x-Jg-NDa"/>
+                                    <constraint firstItem="J9t-HG-Ea6" firstAttribute="centerX" secondItem="6ym-fl-97P" secondAttribute="centerX" id="9PM-jh-F03"/>
+                                    <constraint firstItem="ff3-w7-njU" firstAttribute="centerX" secondItem="6ym-fl-97P" secondAttribute="centerX" id="B3R-r9-z38"/>
+                                    <constraint firstItem="J9t-HG-Ea6" firstAttribute="top" secondItem="ff3-w7-njU" secondAttribute="bottom" constant="8" id="C4q-wI-HwB"/>
+                                    <constraint firstItem="Zoo-n9-jgj" firstAttribute="top" secondItem="ER2-z2-vlN" secondAttribute="bottom" constant="8" id="Dju-ix-eVc"/>
+                                    <constraint firstItem="ER2-z2-vlN" firstAttribute="centerX" secondItem="6ym-fl-97P" secondAttribute="centerX" id="Eb9-Lq-xgJ"/>
+                                    <constraint firstItem="T3Z-kM-9jo" firstAttribute="top" secondItem="6ym-fl-97P" secondAttribute="top" constant="8" id="FqU-QN-zrJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="T3Z-kM-9jo" secondAttribute="trailing" constant="8" id="Gac-9K-VuD"/>
+                                    <constraint firstItem="T3Z-kM-9jo" firstAttribute="leading" secondItem="6ym-fl-97P" secondAttribute="leading" constant="8" id="JDm-n2-Mkf"/>
+                                    <constraint firstItem="flD-A0-UPz" firstAttribute="centerX" secondItem="6ym-fl-97P" secondAttribute="centerX" id="Kqk-wU-FRI"/>
+                                    <constraint firstItem="YiX-vf-n9u" firstAttribute="centerX" secondItem="6ym-fl-97P" secondAttribute="centerX" id="LRV-Ds-GKF"/>
+                                    <constraint firstItem="ER2-z2-vlN" firstAttribute="top" secondItem="YiX-vf-n9u" secondAttribute="bottom" constant="8" id="Lg2-jb-pg0"/>
+                                    <constraint firstItem="Zoo-n9-jgj" firstAttribute="leading" secondItem="6ym-fl-97P" secondAttribute="leading" constant="8" id="O16-jC-gSJ"/>
+                                    <constraint firstItem="vlo-mg-MQS" firstAttribute="centerX" secondItem="6ym-fl-97P" secondAttribute="centerX" id="QPS-jT-fce"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zoo-n9-jgj" secondAttribute="trailing" constant="8" id="Uli-Vy-loO"/>
+                                    <constraint firstItem="g0z-67-CKd" firstAttribute="centerX" secondItem="6ym-fl-97P" secondAttribute="centerX" id="dMm-1e-FT0"/>
+                                    <constraint firstItem="g0z-67-CKd" firstAttribute="top" secondItem="J9t-HG-Ea6" secondAttribute="bottom" constant="8" id="dkL-Tk-6Lp"/>
+                                    <constraint firstItem="flD-A0-UPz" firstAttribute="top" secondItem="T3Z-kM-9jo" secondAttribute="bottom" constant="8" id="fFz-yn-KzB"/>
+                                    <constraint firstAttribute="bottom" secondItem="vlo-mg-MQS" secondAttribute="bottom" constant="8" id="xPG-yw-A5o"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="m6j-yt-BbC" appends="YES" id="fA0-Gu-CFZ"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6ym-fl-97P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A8Z-Wp-mdy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ym-fl-97P" secondAttribute="trailing" constant="8" id="Bkh-w6-Cuc"/>
+                            <constraint firstItem="nq7-c8-NvJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="G1T-ru-XKw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MrQ-Hf-YIL" secondAttribute="trailing" constant="8" id="Ker-YL-xeD"/>
+                            <constraint firstItem="nq7-c8-NvJ" firstAttribute="top" secondItem="MrQ-Hf-YIL" secondAttribute="bottom" constant="8" id="LRr-sR-bV6"/>
+                            <constraint firstItem="6ym-fl-97P" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OFE-Px-Ewt"/>
+                            <constraint firstItem="MrQ-Hf-YIL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="cEI-b2-Asn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nq7-c8-NvJ" secondAttribute="trailing" constant="8" id="dCa-kB-bBE"/>
+                            <constraint firstItem="MrQ-Hf-YIL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="lWA-YB-luV"/>
+                            <constraint firstItem="6ym-fl-97P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="ssx-qd-EwO"/>
+                            <constraint firstItem="6ym-fl-97P" firstAttribute="top" secondItem="nq7-c8-NvJ" secondAttribute="bottom" constant="8" id="vNK-ya-sdc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cookieField" destination="zj9-6n-9hP" id="gb9-Yj-xTo"/>
+                        <outlet property="resultTextView" destination="6uo-Jx-ss1" id="QR2-ml-K18"/>
+                        <outlet property="urlField" destination="nq7-c8-NvJ" id="nZ0-ax-D5a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="m6j-yt-BbC">
+                    <connections>
+                        <action selector="tapped:" destination="BYZ-38-t0r" id="oac-tH-KEn"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="109.82142857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
