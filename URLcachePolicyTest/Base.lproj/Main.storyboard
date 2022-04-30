@@ -60,28 +60,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flD-A0-UPz">
+                                        <rect key="frame" x="108.5" y="33" width="181" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="useProtocolCachePolicy"/>
+                                        <connections>
+                                            <action selector="useProtocolCachePolicyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMd-lv-NRp"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff3-w7-njU">
                                         <rect key="frame" x="87.5" y="72" width="223" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="reloadIgnoringLocalCacheData"/>
                                         <connections>
-                                            <action selector="reloadIgnoringLocalCacheDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUb-ox-vYl"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0z-67-CKd">
-                                        <rect key="frame" x="100.5" y="150" width="197" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="returnCacheDataDontLoad"/>
-                                        <connections>
-                                            <action selector="returnCacheDataElseLoadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ner-ns-Yeg"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiX-vf-n9u">
-                                        <rect key="frame" x="50" y="189" width="298" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="reloadIgnoringLocalAndRemoteCacheData"/>
-                                        <connections>
-                                            <action selector="returnCacheDataDontLoadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgs-ht-vOe"/>
+                                            <action selector="reloadIgnoringLocalCacheDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xeN-q3-4aT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9t-HG-Ea6">
@@ -89,7 +81,23 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="returnCacheDataElseLoad"/>
                                         <connections>
-                                            <action selector="reloadIgnoringLocalAndRemoteCacheDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0lx-cb-zKk"/>
+                                            <action selector="returnCacheDataElseLoadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pwv-8m-Zdc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0z-67-CKd">
+                                        <rect key="frame" x="100.5" y="150" width="197" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="returnCacheDataDontLoad"/>
+                                        <connections>
+                                            <action selector="returnCacheDataDontLoadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oXq-rw-k1y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiX-vf-n9u">
+                                        <rect key="frame" x="50" y="189" width="298" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="reloadIgnoringLocalAndRemoteCacheData"/>
+                                        <connections>
+                                            <action selector="reloadIgnoringLocalAndRemoteCacheDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hpc-jG-OGn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ER2-z2-vlN">
@@ -97,15 +105,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="reloadRevalidatingCacheData"/>
                                         <connections>
-                                            <action selector="reloadRevalidatingCacheDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRf-eE-ReC"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flD-A0-UPz">
-                                        <rect key="frame" x="108.5" y="33" width="181" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="useProtocolCachePolicy"/>
-                                        <connections>
-                                            <action selector="useProtocolCachePolicyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tvh-gG-9hk"/>
+                                            <action selector="reloadRevalidatingCacheDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3Z-LO-wZl"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cookie Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoo-n9-jgj">
