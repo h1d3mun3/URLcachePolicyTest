@@ -65,6 +65,7 @@ extension ViewController {
 
         var urlRequest = URLRequest.init(url: url)
         urlRequest.cachePolicy = cachePolicy
+        urlRequest.addValue(cachePolicy.extractDebugString(), forHTTPHeaderField: "URLRequest.CachePolicy")
 
         let task =  urlSession.dataTask(
             with: urlRequest,
