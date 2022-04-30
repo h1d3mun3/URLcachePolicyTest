@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		834C84E3281D1EB90040E1E7 /* URLCachePlicyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C84E2281D1EB90040E1E7 /* URLCachePlicyExtension.swift */; };
 		836DE853281C19FE00C94736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836DE852281C19FE00C94736 /* AppDelegate.swift */; };
 		836DE855281C19FE00C94736 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836DE854281C19FE00C94736 /* SceneDelegate.swift */; };
 		836DE857281C19FE00C94736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836DE856281C19FE00C94736 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		834C84E2281D1EB90040E1E7 /* URLCachePlicyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCachePlicyExtension.swift; sourceTree = "<group>"; };
 		836DE84F281C19FE00C94736 /* URLcachePolicyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLcachePolicyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836DE852281C19FE00C94736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836DE854281C19FE00C94736 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				836DE85B281C1A0000C94736 /* Assets.xcassets */,
 				836DE85D281C1A0000C94736 /* LaunchScreen.storyboard */,
 				836DE860281C1A0000C94736 /* Info.plist */,
+				834C84E2281D1EB90040E1E7 /* URLCachePlicyExtension.swift */,
 			);
 			path = URLcachePolicyTest;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834C84E3281D1EB90040E1E7 /* URLCachePlicyExtension.swift in Sources */,
 				836DE857281C19FE00C94736 /* ViewController.swift in Sources */,
 				836DE853281C19FE00C94736 /* AppDelegate.swift in Sources */,
 				836DE855281C19FE00C94736 /* SceneDelegate.swift in Sources */,
